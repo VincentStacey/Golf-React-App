@@ -88,7 +88,7 @@
   text-decoration: underline;
 }
 
-.album-and-artist {
+.title-and-brand {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -103,7 +103,7 @@
   margin-inline: 0.5rem;
 }
 
-.record-price {
+.club-price {
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -138,7 +138,6 @@
 
   .product-image-container {
     height: 18rem;
-    background-image: url(../../Images/golf-club-sets-featured-image.webp);
   }
 
   .pagination-div {
@@ -159,7 +158,6 @@
 
   .product-image-container {
     height: 16rem;
-    background-image: url(../../Images/golf-club-sets-featured-image.webp);
   }
 
   .pagination-div {

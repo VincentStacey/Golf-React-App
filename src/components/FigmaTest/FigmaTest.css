@@ -1,17 +1,4 @@
-.cart-with-flat-discount,
-.cart-with-flat-discount * {
-  box-sizing: border-box;
-}
-.cart-with-flat-discount {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  row-gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
+
 .frame-570 {
   background: conic-gradient(
       from 180deg at 50% 50%,
@@ -30,20 +17,6 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-}
-.discount-percent {
-  background: var(--secondary-2, #db4444);
-  border-radius: 4px;
-  padding: 4px 12px 4px 12px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  row-gap: 0px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 12px;
-  top: 12px;
 }
 ._35 {
   color: var(--text, #fafafa);
@@ -69,12 +42,7 @@
   right: 0px;
   top: 0px;
 }
-.fill-heart {
-  flex-shrink: 0;
-  width: 34px;
-  height: 34px;
-  position: relative;
-}
+
 .ellipse-12 {
   background: radial-gradient(
     closest-side,
@@ -90,16 +58,7 @@
   bottom: 0%;
   top: 0%;
 }
-.heart-small {
-  width: 70.59%;
-  height: 70.59%;
-  position: absolute;
-  right: 14.71%;
-  left: 14.71%;
-  bottom: 14.71%;
-  top: 14.71%;
-  overflow: visible;
-}
+
 .fill-eye {
   flex-shrink: 0;
   width: 34px;
@@ -219,54 +178,8 @@
   flex-shrink: 0;
   position: relative;
 }
-.four-half-star {
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.vector {
-  border-radius: 0px;
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  overflow: visible;
-}
-.vector2 {
-  border-radius: 0px;
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  overflow: visible;
-}
-.vector3 {
-  border-radius: 0px;
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  overflow: visible;
-}
-.vector4 {
-  border-radius: 0px;
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  overflow: visible;
-}
-.star-half-filled {
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  overflow: visible;
-}
+
+
 ._99 {
   color: var(--text2, #000000);
   text-align: left;
@@ -313,15 +226,6 @@
 button {
   cursor: pointer;
 }
-.stars {
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
 
 .overlay {
   position: fixed;
@@ -347,22 +251,22 @@ button {
   border-radius: 8px;
 }
 
-.albums-container {
+.golf-container {
   display: flex;
-  flex-wrap: nowrap; /* Ensure items stay in a single row */
-  overflow-x: auto; /* Allow horizontal scrolling */
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
   gap: 65px;
   padding: 16px;
 }
 
 .cart-with-flat-discount {
-  flex: 0 0 auto; /* Prevent items from shrinking */
-  width: 250px; /* Adjust the width as needed */
-  border: 1px solid #ddd; /* Optional border for better visibility */
-  border-radius: 8px; /* Optional rounded corners */
-  overflow: hidden; /* Ensure content stays within the container */
-  background-color: #fff; /* Background color for the item */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual effect */
+  flex: 0 0 auto; 
+  width: 250px;
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  overflow: hidden; 
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .centered-image {
@@ -378,17 +282,12 @@ button {
 .frame-566 {
   padding: 8px;
 }
-.albumsWrapper {
+.clubsWrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 16px;
 }
-.cart-with-flat-discount {
-  position: relative;
-  /* other styles */
-}
-
 .frame-614 {
   position: relative;
 }
@@ -397,10 +296,6 @@ button {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.cart-with-flat-discount:hover .add-to-cart-button {
-  opacity: 1;
 }
 
 .select-wrapper {
@@ -419,10 +314,10 @@ button {
   opacity: 0.5;
   position: relative;
 }
-.albums-container2 {
+.golf-container2 {
   display: flex;
-  flex-wrap: nowrap; /* Ensure items stay in a single row */
-  overflow-x: auto; /* Allow horizontal scrolling */
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
   gap: 65px;
   padding: 16px;
   width: 1227px;
@@ -431,24 +326,23 @@ button {
   padding: 30px;
 }
 
-.albumSection {
+.clubsSection {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* Tablet (1024px and below) */
 @media (max-width: 1024px) {
   .cart-with-flat-discount {
     max-width: 100%;
     margin: 0 auto;
   }
-  .albums-container {
+  .clubs-container {
     width: 800px;
     gap: 20px;
     padding: 8px;
   }
 
-  .albums-container2 {
+  .clubs-container2 {
     width: 800px;
     gap: 20px;
     padding: 8px;
@@ -467,13 +361,6 @@ button {
     opacity: 1;
   }
 }
-.flashSaleContainer {
-  justify-content: center;
-  width: 800px;
-}
-.testimonials-container {
-  width: 800px;
-}
 /* Mobile (480px and below) */
 @media (max-width: 480px) {
   .cart-with-flat-discount {
@@ -483,8 +370,8 @@ button {
     padding: 8px;
   }
 
-  .albums-container,
-  .albums-container2 {
+  .clubs-container,
+  .clubs-container2 {
     flex-direction: column;
     gap: 16px;
     padding: 8px;
@@ -515,18 +402,5 @@ button {
   ._400,
   ._99 {
     font-size: 14px;
-  }
-
-  .star-half-filled {
-    width: 16px;
-    height: 16px;
-  }
-
-  .vector,
-  .vector2,
-  .vector3,
-  .vector4 {
-    width: 16px;
-    height: 16px;
   }
 }

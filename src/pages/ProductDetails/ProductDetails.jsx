@@ -48,7 +48,7 @@ const ProductDetails = () => {
           </div>
           <br />
           <h2 className="product-title">{title}</h2>
-          <h3 className="product-artist">{brand}</h3>
+          <h3 className="product-brand">{brand}</h3>
           <p className="product-price">${price.toFixed(2)}</p>
         </div>
         <div className="half">

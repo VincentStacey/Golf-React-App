@@ -6,17 +6,6 @@ import { useNavigate } from "react-router-dom";
 
 const QuickViewModel = ({ product, onClose, onAddToCart }) => {
   const navigate = useNavigate();
-  const renderQuantityRemaining = (quantity) => {
-    if (quantity <= 10) {
-      return (
-        <div className="quantity-remaining hot-buy">
-          🔥 Only <span className="blink-text">{quantity}</span> left! 🔥
-        </div>
-      );
-    }
-    return null;
-  };
-
   const handleOpenProduct = (id) => {
     console.log("Opening product details");
     console.log(id);
@@ -39,13 +28,11 @@ const QuickViewModel = ({ product, onClose, onAddToCart }) => {
           <div className="model-right">
             <div className="model-header">
               <h2 className="model-title">{product.title}</h2>
-              <h3 className="model-artist">{product.brand}</h3>
+              <h3 className="model-brand">{product.brand}</h3>
 
               <p className="model-price">${product.price.toFixed(2)}</p>
-              {renderQuantityRemaining(product.quantity)}
             </div>
-            <p className="model-description">{product.description}</p>
-            <div className="model-tracklist">
+            <div className="model-brand">
               <h4>Brand:</h4>
               <ol>
                 {product.category.map((category, index) => (

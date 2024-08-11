@@ -19,15 +19,16 @@ export function ProductProvider({ children }) {
   const fetchProducts = useCallback(async () => {
     try {
       setLoading(true);
-      const response = await fetch("../db.json");
+      const response = await fetch("/db.json"); //It actuall has to do with the app.js relation than the components, my b.
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
       const data = await response.json();
-      setProducts(data);
-      setBrand([...new Set(data.map((product) => product.brand))]);
-      setCategory([...new Set(data.map((product) => product.category))]);
-      setPrice([...new Set(data.map((product) => product.price))]);
+      const products = data.clubs; // 'clubs' is the key holding your product data
+      setProducts(products);
+      setBrand([...new Set(products.map((product) => product.brand))]);
+      setCategory([...new Set(products.map((product) => product.category))]);
+      setPrice([...new Set(products.map((product) => product.price))]);
       setError(null);
     } catch (error) {
       setError(error.message);

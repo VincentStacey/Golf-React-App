@@ -61,14 +61,14 @@ const ProductList = () => {
                     className="quick-view-button"
                   />
                 </div>
-                <div className="album-and-artist">
+                <div className="title-and-brand">
                   <span>
                     <strong>{product.title}</strong>
                   </span>
                   <span>{product.brand}</span>
                 </div>
                 <div className="cost-and-button">
-                  <span className="record-price">${product.price}</span>
+                  <span className="club-price">${product.price}</span>
                   <Button
                     text="Add to Cart"
                     onClick={(e) => handleAddToCart(e, product)}

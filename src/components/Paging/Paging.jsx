@@ -2,7 +2,7 @@
 import React from "react";
 import "./Paging.css";
 
-const Paging = ({ itemsPerPage, totalItems, paginate, currentPage }) => {
+const Paging = ({ itemsPerPage, totalItems, paging, currentPage }) => {
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++) {
@@ -17,7 +17,7 @@ const Paging = ({ itemsPerPage, totalItems, paginate, currentPage }) => {
             key={number}
             className={`page-item ${currentPage === number ? "active" : ""}`}
           >
-            <a onClick={() => paginate(number)} href="#!" className="page-link">
+            <a onClick={() => paging(number)} href="#!" className="page-link">
               {number}
             </a>
           </span>

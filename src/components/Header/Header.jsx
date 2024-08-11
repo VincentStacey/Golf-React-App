@@ -16,8 +16,8 @@ const Header = () => {
 
   return (
     <header>
-      <div className="sale-popup">
-        <p className="sale-popup-text">
+      <div className="golfcity-header">
+        <p className="golfcity-header">
          <p>GolfCity.com</p>
         </p>
       </div>

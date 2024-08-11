@@ -7,23 +7,23 @@ import Button from "../Button/Button";
 const FigmaTest = () => {
   const { products, loading, error } = useProducts();
   const { addToCart } = useShoppingCart();
-  const [randomAlbums, setRandomAlbums] = useState([]);
+  const [randomClubs, setRandomClubs] = useState([]);
   const [reviewNumbers, setReviewNumbers] = useState([]);
   const [isEnlarged, setIsEnlarged] = useState(false);
   const [enlargedImage, setEnlargedImage] = useState(null);
-  const [hoveredAlbumId, setHoveredAlbumId] = useState(null);
+  const [hoveredClubId, setHoveredClubId] = useState(null);
 
   useEffect(() => {
     if (products.length) {
-      const getRandomAlbums = () => {
+      const getRandomClubs = () => {
         const shuffled = [...products].sort(() => 0.5 - Math.random());
         return shuffled.slice(0, 4);
       };
 
-      const albums = getRandomAlbums();
-      setRandomAlbums(albums);
+      const clubs = getRandomClubs();
+      setRandomClubs(clubs);
 
-      const reviews = albums.map(
+      const reviews = clubs.map(
         () => Math.floor(Math.random() * (139 - 69 + 1)) + 69
       );
       setReviewNumbers(reviews);
@@ -54,10 +54,10 @@ const FigmaTest = () => {
   };
 
   return (
-    <div className="albumsSection">
-      <div className="albumsWrapper">
-        <div className="albums-container">
-          {randomAlbums.map((product, index) => {
+    <div className="clubsSection">
+      <div className="clubsWrapper">
+        <div className="golf-container">
+          {randomClubs.map((product, index) => {
             const discountedPrice = (product.price * 0.75).toFixed(2);
             const reviewNumber = reviewNumbers[index] || 0;
 
@@ -65,13 +65,10 @@ const FigmaTest = () => {
               <div
                 className="cart-with-flat-discount"
                 key={product.id}
-                onMouseEnter={() => setHoveredAlbumId(product.id)}
-                onMouseLeave={() => setHoveredAlbumId(null)}
+                onMouseEnter={() => setHoveredClubId(product.id)}
+                onMouseLeave={() => setHoveredClubId(null)}
               >
                 <div className="frame-570">
-                  <div className="discount-percent">
-                    <div className="_35">-25%</div>
-                  </div>
                   <div className="frame-575">
                     <div className="fill-eye">
                       <div className="ellipse-13"></div>
@@ -89,7 +86,7 @@ const FigmaTest = () => {
                       src={product.coverImage}
                       alt={product.title}
                     />
-                    {hoveredAlbumId === product.id && (
+                    {hoveredClubId === product.id && (
                       <Button
                         text="Add to Cart"
                         className="add-to-cart-button-home"
@@ -99,7 +96,7 @@ const FigmaTest = () => {
                   </div>
                 </div>
                 <div className="frame-569">
-                  <div className="artist-name">{product.artist}</div>
+                  <div className="brand-name">{product.brand}</div>
                   <div className="s-series-comfort-chair">{product.title}</div>
                   <div className="frame-567">
                     <div className="_375">${discountedPrice}</div>
