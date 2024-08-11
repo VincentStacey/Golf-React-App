@@ -1,0 +1,26 @@
+.paging {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  
+  .page-item {
+    margin-inline: 0.5rem;
+  }
+  
+  .page-link {
+    font-family: "Courier New", Courier, monospace;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    color: #333;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    font-weight: bold;
+  }

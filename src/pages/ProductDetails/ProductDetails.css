@@ -1,0 +1,28 @@
+.product-details-container {
+    display: flex;
+    box-shadow: var(--box-shadow);
+    height: auto;
+    padding: 1rem;
+    gap: 0.5rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 2;
+    border: 2px solid gray;
+    justify-content: space-between;
+}
+
+.half {
+    width: 47%;
+}
+
+.product-image-container {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.product-image-container img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}

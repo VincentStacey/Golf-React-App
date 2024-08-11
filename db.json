@@ -1,0 +1,86 @@
+{
+    "clubs": [
+        {
+            "id": "1",
+            "title": "Titleist T100 Irons",
+            "brand": "Titleist",
+            "year": 2023,
+            "category": "Irons",
+            "price": 1299.99,
+            "coverImage": "/productimages/T100Irons.png"
+        },
+        {
+            "id": "2",
+            "title": "Titleist TSr2 Driver",
+            "brand": "Titleist",
+            "year": 2023,
+            "category": "Driver",
+            "price": 549.99,
+            "coverImage": "/productimages/TitleistDriver.png"
+        },
+        {
+            "id": "3",
+            "title": "Titleist Vokey SM9 Wedge",
+            "brand": "Titleist",
+            "year": 2023,
+            "category": "Wedge",
+            "price": 179.99,
+            "coverImage": "/productimages/TitleistVokey.png"
+        },
+        {
+            "id": "4",
+            "title": "TaylorMade P770 Irons",
+            "brand": "TaylorMade",
+            "year": 2023,
+            "category": "Irons",
+            "price": 1249.99,
+            "coverImage": "/produdctimages/P770Irons.jpg"
+        },
+        {
+            "id": "5",
+            "title": "TaylorMade Stealth 2 Driver",
+            "brand": "TaylorMade",
+            "year": 2023,
+            "category": "Driver",
+            "price": 599.99,
+            "coverImage": "/productimages/stealth2driver.jpg"
+        },
+        {
+            "id": "6",
+            "title": "TaylorMade MG3 Wedge",
+            "brand": "TaylorMade",
+            "year": 2023,
+            "category": "Wedge",
+            "price": 179.99,
+            "coverImage": "/productimages/taylormademg3wedge.jpg"
+        },
+        {
+            "id": "7",
+            "title": "Callaway Apex Irons",
+            "brand": "Callaway",
+            "year": 2023,
+            "category": "Irons",
+            "price": 1399.99,
+            "coverImage": "/productimages/CallawayApexIrons.png"
+        },
+        {
+            "id": "8",
+            "title": "Callaway Paradym Driver",
+            "brand": "Callaway",
+            "year": 2023,
+            "category": "Driver",
+            "price": 599.99,
+            "coverImage": "/productimages/CallawayParadymDriver.png"
+        },
+        {
+            "id": "9",
+            "title": "Callaway JAWS MD5 Wedge",
+            "brand": "Callaway",
+            "year": 2023,
+            "category": "Wedge",
+            "price": 179.99,
+            "coverImage": "/productimages/CallawayJAWSMD5.jpg"
+            }
+    ]
+}
+        
