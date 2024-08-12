@@ -147,7 +147,7 @@
   }
   
   .trash-can:hover {
-    color: red;
+    color: #31473A;
   }
   
   .confirm-dialog-overlay {
@@ -182,7 +182,10 @@
   .confirm-dialog-buttons {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 500px;
+    margin: 50px;
+    position: absolute;
+    top: 370px;
   }
   
   .confirm-dialog-button {

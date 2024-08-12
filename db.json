@@ -34,7 +34,7 @@
             "year": 2023,
             "category": "Irons",
             "price": 1249.99,
-            "coverImage": "/produdctimages/P770Irons.jpg"
+            "coverImage": "/productimages/P770Irons.jpg"
         },
         {
             "id": "5",
@@ -79,8 +79,36 @@
             "year": 2023,
             "category": "Wedge",
             "price": 179.99,
-            "coverImage": "/productimages/CallawayJAWSMD5.jpg"
-            }
+            "coverImage": "/productimages/CallawayJAWSMD5.jpeg"
+            },
+
+        {
+            "id": "10",
+            "title": "Cobra King Forged Tec Irons",
+            "brand": "Cobra",
+            "year": 2023,
+            "category": "Irons",
+            "price": 1299.99,
+            "coverImage": "/productimages/CobraKingForgedTecIrons.jpg"
+        },
+        {
+            "id": "11",
+            "title": "Cobra RADSPEED Driver",
+            "brand": "Cobra",
+            "year": 2023,
+            "category": "Driver",
+            "price": 499.99,
+            "coverImage": "/productimages/CobraRadspeedDriver.jpg"
+        },
+        {
+            "id": "12",
+            "title": "Cobra King F9 Speedback Fairway Wood",
+            "brand": "Cobra",
+            "year": 2023,
+            "category": "Fairway Wood",
+            "price": 279.99,
+            "coverImage": "/productimages/CobraKingF9SpeedbackFairwayWood.jpg"
+        }        
     ]
 }
         

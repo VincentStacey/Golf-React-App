@@ -17,9 +17,7 @@ const Header = () => {
   return (
     <header>
       <div className="golfcity-header">
-        <p className="golfcity-header">
-         <p>GolfCity.com</p>
-        </p>
+        <p>GolfCity.com</p>
       </div>
       <div className="title-section">
         <h2 onClick={onTitleClick}>Golf City</h2>
@@ -42,7 +40,6 @@ const Header = () => {
               navigate("/checkout");
             }}
             variant="cart"
-            
           />
         </div>
       </div>

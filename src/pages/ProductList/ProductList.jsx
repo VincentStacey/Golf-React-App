@@ -9,7 +9,7 @@ import "./ProductList.css";
 
 const ProductList = () => {
   const { addToCart } = useShoppingCart();
-  const { products,} = useProducts();
+  const { products } = useProducts();
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
@@ -22,7 +22,6 @@ const ProductList = () => {
     return products.slice(indexOfFirstProduct, indexOfLastProduct);
   };
 
-
   const paging = (pageNumber) => setCurrentPage(pageNumber);
 
   const handleOpenProduct = (id) => {
@@ -33,7 +32,6 @@ const ProductList = () => {
     e.stopPropagation();
     addToCart(product);
   };
-
 
   const handleQuickView = (e, product) => {
     e.stopPropagation();
@@ -105,5 +103,4 @@ const ProductList = () => {
     </div>
   );
 };
-
 export default ProductList;

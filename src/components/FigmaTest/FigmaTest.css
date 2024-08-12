@@ -7,8 +7,8 @@
     ),
     linear-gradient(
       180deg,
-      rgba(24, 59, 67, 1) 18.000000715255737%,
-      rgba(61, 149, 169, 1) 97.00000286102295%
+      rgb(29, 212, 38) 18.000000715255737%,
+      rgb(11, 78, 28) 97.00000286102295%
     );
   border-radius: 4px;
   flex-shrink: 0;
@@ -46,8 +46,8 @@
 .ellipse-12 {
   background: radial-gradient(
     closest-side,
-    rgba(95, 229, 222, 1) 64.99999761581421%,
-    rgba(53, 127, 123, 1) 100%
+    rgb(3, 65, 34) 64.99999761581421%,
+    rgb(20, 143, 81) 100%
   );
   border-radius: 50%;
   width: 100%;
@@ -68,8 +68,8 @@
 .ellipse-13 {
   background: radial-gradient(
     closest-side,
-    rgba(95, 229, 222, 1) 64.99999761581421%,
-    rgba(53, 127, 123, 1) 100%
+    rgb(225, 230, 227) 64.99999761581421%,
+    rgb(134, 180, 155) 100%
   );
   border-radius: 50%;
   width: 100%;

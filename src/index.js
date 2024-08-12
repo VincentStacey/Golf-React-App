@@ -14,3 +14,5 @@ root.render(
     </ShoppingCartProvider>
   </React.StrictMode>
 );
+
+
